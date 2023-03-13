@@ -1,0 +1,5 @@
+// the configuration file for babel which is used to run commands related to transpiling code
+
+{
+  "presets": ["@babel/preset-env"]
+}

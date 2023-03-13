@@ -30,3 +30,15 @@
    ```
    npm install mongoose --save
    ```
+4. Install Babel components as devDependencies:
+   - [x] @babel/core: the core Babel package that transforms ES6+ code into backward-compatible JavaScript code that can run in older browsers
+   - [x] @babel/cli: the command-line interface for Babel that lets you run Babel from the terminal
+   - [x] @babel/node: a Babel package that lets you run Node.js scripts with Babel transpilation
+   - [x] @babel/preset-env: automatically determines which plugins to use based on your target environment, it allows you to write modern JavaScript code without worrying about compatibility issues
+   ```
+   npm i --save-dev @babel/core @babel/cli @babel/node @babel/preset-env
+   ```
+5. Install the Node.js middleware module `body-parser`:
+   ```
+   npm install body-parser --save
+   ```
