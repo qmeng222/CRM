@@ -43,6 +43,10 @@
    npm install body-parser --save
    ```
 
-### References:
+### References & Libraries:
 
 1. How to Connect to MongoDB Atlas: https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas/
+2. KoaJS (a minimalist web framework for Node.js): https://koajs.com/
+3. Swagger (an open-source framework for designing, building, documenting, and testing RESTful APIs): https://swagger.io/
+4. LoopBack (an open-source Node.js framework for building APIs and microservices): https://loopback.io/
+5. JWT (security features for APIs): https://jwt.io/
