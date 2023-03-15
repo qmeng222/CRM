@@ -20,6 +20,10 @@ mongoose.connect("mongodb://localhost/CRMdb", {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// serving static files:
+// eg: localhost:3000/sky.jpeg
+app.use(express.static("public"));
+
 // invoke the routes:
 routes(app);
 
