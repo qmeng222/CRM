@@ -19,6 +19,7 @@ const routes = (app) => {
 
   app
     .route("/contact/:contactId")
+    .get(getContactWithID)
     .put((req, res) => res.send("PUT request successful!"))
     .delete((req, res) => res.send("DELETE request successful!"));
 };
