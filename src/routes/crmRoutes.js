@@ -3,7 +3,7 @@ const routes = (app) => {
     .route("/contacts")
     .get(
       (req, res, next) => {
-        // middleware:
+        // middleware (a single function or a series of functions in Express that can modify the request and response objects, as well as call the next middleware function in the stack):
         console.log(`Request from: ${req.originalUrl}`); // Request from: /contacts
         console.log(`Request type: ${req.method}`); // Request type: GET
         next();
