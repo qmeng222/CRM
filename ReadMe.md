@@ -42,3 +42,7 @@
    ```
    npm install body-parser --save
    ```
+
+### References:
+
+1. How to Connect to MongoDB Atlas: https://studio3t.com/knowledge-base/articles/connect-to-mongodb-atlas/

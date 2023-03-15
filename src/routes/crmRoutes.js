@@ -1,10 +1,12 @@
+import { addNewContact } from "../controllers/crmController";
+
 const routes = (app) => {
   app
-    .route("/contacts")
+    .route("/contact")
     .get(
       (req, res, next) => {
         // middleware (a single function or a series of functions in Express that can modify the request and response objects, as well as call the next middleware function in the stack):
-        console.log(`Request from: ${req.originalUrl}`); // Request from: /contacts
+        console.log(`Request from: ${req.originalUrl}`); // Request from: /contact
         console.log(`Request type: ${req.method}`); // Request type: GET
         next();
       },
@@ -12,10 +14,11 @@ const routes = (app) => {
         res.send("GET request successful!");
       }
     )
-    .post((req, res) => res.send("POST request successful!"));
+    // .post((req, res) => res.send("POST request successful!"));
+    .post(addNewContact);
 
   app
-    .route("/contacts/:contactId")
+    .route("/contact/:contactId")
     .put((req, res) => res.send("PUT request successful!"))
     .delete((req, res) => res.send("DELETE request successful!"));
 };
